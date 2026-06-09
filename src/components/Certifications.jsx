@@ -150,11 +150,11 @@ function Certifications() {
             </span>
 
             <a
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="certificate-btn"
-            >
+                href={`${import.meta.env.BASE_URL}${cert.link.replace("/", "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="certificate-btn"
+              >
               View Certificate
               <FaExternalLinkAlt />
             </a>
