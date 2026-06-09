@@ -18,7 +18,7 @@ body{
 }
 
 section{
-  padding:80px 8%;
+  padding:120px 8%;
 }
 
 .section-title{
@@ -63,34 +63,20 @@ section{
 }
 
 .logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
+  font-size:1.8rem;
+  font-weight:700;
 
-  font-size:2rem;
-  font-weight:800;
   text-decoration:none;
-}
 
-.logo-dot{
-  width:10px;
-  height:10px;
+  background:
+  linear-gradient(
+    90deg,
+    #38bdf8,
+    #8b5cf6
+  );
 
-  border-radius:50%;
-
-  background:#38bdf8;
-
-  box-shadow:
-    0 0 10px #38bdf8,
-    0 0 20px #38bdf8;
-}
-
-.logo-first{
-  color:#38bdf8;
-}
-
-.logo-last{
-  color:#7c7cff;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 .nav-links{
@@ -777,19 +763,7 @@ section{
   0 10px 25px rgba(56,189,248,.25);
 }
 
-/* MOBILE */
 
-@media (max-width: 768px){
-
-  .projects-grid{
-    grid-template-columns:1fr;
-  }
-
-  .project-content h3{
-    min-height:auto;
-  }
-
-}
 /* EDUCATION */
 
 .education {
@@ -891,21 +865,13 @@ section{
   font-weight: 600;
 }
 
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-  .education-card {
-    flex-direction: column;
-    text-align: center;
-  }
 
   .education-logo {
     width: 90px;
     height: 90px;
   }
 
-}
+
 
 /* CERTIFICATIONS */
 .certifications {
@@ -1176,4 +1142,188 @@ section{
   color:#64748b;
 
   font-size:.9rem;
+}
+/* ==========================================
+   MOBILE RESPONSIVE DESIGN
+========================================== */
+
+@media screen and (max-width: 768px){
+
+  /* GLOBAL */
+
+  section{
+    padding:80px 6%;
+  }
+
+  .section-title{
+    font-size:2.3rem;
+    margin-bottom:25px;
+  }
+
+  .section-subtitle{
+    font-size:1rem;
+    margin-bottom:40px;
+  }
+
+  /* NAVBAR */
+
+  .navbar{
+    justify-content:center;
+    padding:18px 5%;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .logo{
+    font-size:1.8rem;
+  }
+
+  /* HERO */
+
+  .hero{
+    flex-direction:column-reverse;
+    text-align:center;
+
+    min-height:auto;
+
+    padding-top:120px;
+    gap:40px;
+  }
+
+  .hero-content{
+    width:100%;
+  }
+
+  .intro{
+    font-size:1.1rem;
+  }
+
+  .hero h1{
+    font-size:3.2rem;
+    line-height:1.1;
+  }
+
+  .hero h2{
+    font-size:1.7rem;
+  }
+
+  .hero-description{
+    font-size:1rem;
+    line-height:1.8;
+    max-width:100%;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .primary-btn{
+    width:100%;
+    max-width:260px;
+  }
+
+  /* PROFILE IMAGE */
+
+  .avatar-glow{
+    width:320px;
+    height:320px;
+  }
+
+  .image-ring{
+    width:260px;
+    height:260px;
+  }
+
+  /* SKILLS */
+
+  .skills{
+    padding-top:60px;
+  }
+
+  .tech-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .tech-card{
+    padding:25px;
+  }
+
+  /* EDUCATION */
+
+  .education-card{
+    flex-direction:column;
+    text-align:center;
+    padding:25px;
+  }
+
+  .education-content h3{
+    font-size:1.6rem;
+  }
+
+  /* PROJECTS */
+
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  .project-card{
+    width:100%;
+  }
+
+  .project-image{
+    height:220px;
+  }
+
+  .project-content h3{
+    min-height:auto;
+    font-size:1.3rem;
+  }
+
+  .project-links{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .project-links a{
+    justify-content:center;
+    width:100%;
+  }
+
+  /* CERTIFICATIONS */
+
+  .certifications-grid{
+    grid-template-columns:1fr;
+  }
+
+  .certificate-card{
+    width:100%;
+  }
+
+  .certificate-btn{
+    width:100%;
+  }
+
+  /* CONTACT */
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-card{
+    padding:30px 20px;
+  }
+
+  .contact-card h3{
+    font-size:1.5rem;
+  }
+
+  /* FOOTER */
+
+  .footer{
+    padding:40px 6%;
+  }
+
 }
