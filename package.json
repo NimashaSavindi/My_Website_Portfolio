@@ -2,16 +2,15 @@
   "name": "nimasha-savindi-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nimashasavindi.github.io/nimasha-savindi-portfolio",
+ "homepage": "https://nimashasavindi.github.io/My_Website_Portfolio",
   "type": "module",
- "scripts": {
+"scripts": {
   "dev": "vite",
   "build": "vite build",
   "lint": "eslint .",
   "preview": "vite preview",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
-}
   },
   "dependencies": {
     "aos": "^2.3.4",
